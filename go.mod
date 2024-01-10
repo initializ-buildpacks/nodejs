@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/nodejs
+module github.com/initializ-buildpacks/nodejs
 
 go 1.16
 
