@@ -3,25 +3,25 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/node-engine@3.0.1"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:2f182e5f58d1c407699cbf097f22a3ac5c47f857c1b6d0b1cd8f9528178a41ee"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/node-start@1.1.3"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:c76af7cd6f6a6a0801367ef54ea47718974dbc6238d831b6ebafc37cb32a5fda"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/npm-install@1.3.1"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:4059315ed60adcac0905a2235167c3c31471f75fa1ba437346db8c70922bf4ca"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/npm-start@1.0.15"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:68f82d5001a7b22058d30490205b13babb69570d05653e266b98b14c6172028c"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/yarn-install@1.2.2"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:11bd2455fa53f10a9d25631c7ce355f82c2be6c9187eab2a2cfb786cc7fee4b9"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/yarn@1.2.0"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:bbc1640eb90437cf3a9ccb56b5969832cfa72f759c170749980ec4d1482550bf"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/yarn-start@1.1.3"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:5ede507707cfe5adbbb753c6fa606984f4f21f3b0b1fbf21b3ccddcec0cec47d"
 
 [[dependencies]]
   uri = "urn:cnb:registry:paketo-buildpacks/procfile@5.6.7"
@@ -36,7 +36,7 @@
   uri = "urn:cnb:registry:paketo-buildpacks/ca-certificates@3.6.6"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:paketo-buildpacks/node-run-script@1.0.14"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:e837e4bd24a56902e6e735172a811a51e900808aa94b023e1435dfb83fb00219"
 
 [[dependencies]]
   uri = "urn:cnb:registry:paketo-buildpacks/watchexec@2.8.6"
