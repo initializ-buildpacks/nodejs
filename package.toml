@@ -6,22 +6,22 @@
   uri = "docker://public.ecr.aws/initializ/nodejs@sha256:e6d3ec6cfeee5c9ca2cdb82c0659c5f3af496965473f37582dad91490434195f"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:c76af7cd6f6a6a0801367ef54ea47718974dbc6238d831b6ebafc37cb32a5fda"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:7d7fc0d174da638aadc6618c39412d05ee06ebd7ac480ec39322b85d9e8378e6"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:4059315ed60adcac0905a2235167c3c31471f75fa1ba437346db8c70922bf4ca"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:479d844c029d28597c948daed895a01c954a7f91e73cd68a00596fa4e24caec9"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:68f82d5001a7b22058d30490205b13babb69570d05653e266b98b14c6172028c"
+  uri = "docker:/public.ecr.aws/initializ/nodejs@sha256:0f9fde14e399f3c684032a82a35f958b19e92ff84c58d96f43d53f230f1bc37e"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:11bd2455fa53f10a9d25631c7ce355f82c2be6c9187eab2a2cfb786cc7fee4b9"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:3d95765211363b8ff7880cd0af90dabe35c7baa22fdf6b02bce21c459ea458ab"
 
 [[dependencies]]
   uri = "docker://public.ecr.aws/initializ/nodejs@sha256:bbc1640eb90437cf3a9ccb56b5969832cfa72f759c170749980ec4d1482550bf"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:5ede507707cfe5adbbb753c6fa606984f4f21f3b0b1fbf21b3ccddcec0cec47d"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:4fbbbc45b1a1cee4a04971b924988371b8504210ce74e2cf67f0c4cea9060e0b"
 
 [[dependencies]]
   uri = "urn:cnb:registry:paketo-buildpacks/procfile@5.6.7"
