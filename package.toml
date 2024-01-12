@@ -36,7 +36,7 @@
   uri = "urn:cnb:registry:paketo-buildpacks/ca-certificates@3.6.6"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:e837e4bd24a56902e6e735172a811a51e900808aa94b023e1435dfb83fb00219"
+  uri = "public.ecr.aws/initializ/nodejs@sha256:a98f59bed5a46a457d8451708ddfc330688b81e7c509bc1d6c048a24cdae7672"
 
 [[dependencies]]
   uri = "urn:cnb:registry:paketo-buildpacks/watchexec@2.8.6"
