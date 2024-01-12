@@ -3,7 +3,7 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:2f182e5f58d1c407699cbf097f22a3ac5c47f857c1b6d0b1cd8f9528178a41ee"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:e6d3ec6cfeee5c9ca2cdb82c0659c5f3af496965473f37582dad91490434195f"
 
 [[dependencies]]
   uri = "docker://public.ecr.aws/initializ/nodejs@sha256:c76af7cd6f6a6a0801367ef54ea47718974dbc6238d831b6ebafc37cb32a5fda"
