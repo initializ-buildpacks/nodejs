@@ -18,7 +18,7 @@
   uri = "docker://public.ecr.aws/initializ/nodejs@sha256:3d95765211363b8ff7880cd0af90dabe35c7baa22fdf6b02bce21c459ea458ab"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:bbc1640eb90437cf3a9ccb56b5969832cfa72f759c170749980ec4d1482550bf"
+  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:fd9e276c3db115fdc5322a71cd02f15ebd325e4a08c752a02f8e032fff114836"
 
 [[dependencies]]
   uri = "docker://public.ecr.aws/initializ/nodejs@sha256:4fbbbc45b1a1cee4a04971b924988371b8504210ce74e2cf67f0c4cea9060e0b"
