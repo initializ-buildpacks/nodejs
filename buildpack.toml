@@ -15,14 +15,14 @@ api = "0.7"
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
+    id = "initializ-buildpacks/ca-certificates"
     optional = true
-    version = "3.6.6"
+    version = "3.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/watchexec"
+    id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.6"
+    version = "2.8.8"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -52,36 +52,36 @@ api = "0.7"
     version = "1.1.4"
 
   [[order.group]]
-    id = "paketo-buildpacks/procfile"
+    id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.7"
+    version = "5.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/datadog"
+    id = "initializ-buildpacks/datadog"
     optional = true
-    version = "3.6.0"
+    version = "4.8.0"
 
   [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
+    id = "initializ-buildpacks/environment-variables"
     optional = true
-    version = "4.5.6"
+    version = "4.5.7"
 
   [[order.group]]
-    id = "paketo-buildpacks/image-labels"
+    id = "initializ-buildpacks/image-labels"
     optional = true
     version = "4.5.5"
 
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
+    id = "initializ-buildpacks/ca-certificates"
     optional = true
-    version = "3.6.6"
+    version = "3.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/watchexec"
+    id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.6"
+    version = "2.8.8"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -107,36 +107,36 @@ api = "0.7"
     version = "1.0.16"
 
   [[order.group]]
-    id = "paketo-buildpacks/procfile"
+    id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.7"
+    version = "5.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/datadog"
+    id = "initializ-buildpacks/datadog"
     optional = true
-    version = "3.6.0"
+    version = "4.8.0"
 
   [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
+    id = "initializ-buildpacks/environment-variables"
     optional = true
-    version = "4.5.6"
+    version = "4.5.7"
 
   [[order.group]]
-    id = "paketo-buildpacks/image-labels"
+    id = "initializ-buildpacks/image-labels"
     optional = true
     version = "4.5.5"
 
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
+    id = "initializ-buildpacks/ca-certificates"
     optional = true
-    version = "3.6.6"
+    version = "3.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/watchexec"
+    id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.6"
+    version = "2.8.8"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -147,21 +147,21 @@ api = "0.7"
     version = "1.1.4"
 
   [[order.group]]
-    id = "paketo-buildpacks/procfile"
+    id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.7"
+    version = "5.6.9"
 
   [[order.group]]
-    id = "paketo-buildpacks/datadog"
+    id = "initializ-buildpacks/datadog"
     optional = true
-    version = "3.6.0"
+    version = "4.8.0"
 
   [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
+    id = "initializ-buildpacks/environment-variables"
     optional = true
-    version = "4.5.6"
+    version = "4.5.7"
 
   [[order.group]]
-    id = "paketo-buildpacks/image-labels"
+    id = "initializ-buildpacks/image-labels"
     optional = true
     version = "4.5.5"
