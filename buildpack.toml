@@ -54,7 +54,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.9"
+    version = "5.6.10"
 
   [[order.group]]
     id = "initializ-buildpacks/datadog"
@@ -109,7 +109,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.9"
+    version = "5.6.10"
 
   [[order.group]]
     id = "initializ-buildpacks/datadog"
@@ -149,7 +149,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/procfile"
     optional = true
-    version = "5.6.9"
+    version = "5.6.10"
 
   [[order.group]]
     id = "initializ-buildpacks/datadog"
