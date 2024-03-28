@@ -3,43 +3,43 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:e6d3ec6cfeee5c9ca2cdb82c0659c5f3af496965473f37582dad91490434195f"
+  uri = "index.docker.io/initializbuildpacks/node-engine@sha256:d1f19456388981b020c6a92f3268b3f076639f671443d0e0d6ef73fb3bce0f35"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:7d7fc0d174da638aadc6618c39412d05ee06ebd7ac480ec39322b85d9e8378e6"
+  uri = "index.docker.io/initializbuildpacks/node-start@sha256:1f8f780f93a57f9e2409592babfe45e78e7f24a4c4c2aa0db2064e909cb91071"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:479d844c029d28597c948daed895a01c954a7f91e73cd68a00596fa4e24caec9"
+  uri = "index.docker.io/initializbuildpacks/npm-install@sha256:41ee0ddc865d501a2c867079c1bb2aeb37b4ed856e31e647c2f829bbf5670539"
 
 [[dependencies]]
-  uri = "docker:/public.ecr.aws/initializ/nodejs@sha256:0f9fde14e399f3c684032a82a35f958b19e92ff84c58d96f43d53f230f1bc37e"
+  uri = "index.docker.io/initializbuildpacks/npm-start@sha256:e010f88be545fc91674979c2f7c69473f296aafe923d66eb7b36b12a5aa6de4b"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:3d95765211363b8ff7880cd0af90dabe35c7baa22fdf6b02bce21c459ea458ab"
+  uri = "index.docker.io/initializbuildpacks/yarn-install@sha256:9e39936dedd9c5582912dc42df0aad61246204f825d456cb173395c8fe26cea0"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:a27b03f34b66e6e42cdc39a940ceaa578c88e97733f08fb7079bb1dcf3be8386"
+  uri = "index.docker.io/initializbuildpacks/yarn@sha256:2573176f2e2ea13528f5427420b205eaaab6b99a2621d66a1447008b8428f186"
 
 [[dependencies]]
-  uri = "docker://public.ecr.aws/initializ/nodejs@sha256:4fbbbc45b1a1cee4a04971b924988371b8504210ce74e2cf67f0c4cea9060e0b"
+  uri = "index.docker.io/initializbuildpacks/yarn-start@sha256:6152b8d374d907331ca72f7ab2479b38abc2535ba2cf9eb777744395086372d2"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/procfile@sha256:f9f9558b1ead4e8fc781b5e62df54eac074c2a240bab99737b4c824c6e6f3712"
+  uri = "index.docker.io/initializbuildpacks/procfile@sha256:bd23a2d42c75721f49ab15964e24cb9080427b17c2a7b25db710b30c2761540c"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/environment-variables@sha256:f09abaa902044fd03b747c13e8b8330116afe0b6402cdfad8c391c5390e33167"
+  uri = "index.docker.io/initializbuildpacks/environment-variables@sha256:2edb6355904423441837f691d85a624491254e18cda5a4634db72b1f16f8be0d"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/image-labels@sha256:19ee94f0228880ee689ed9b652141c4d91de7f1ec8d49b21efd580b70dd15127"
+  uri = "index.docker.io/initializbuildpacks/image-labels@sha256:8f9097e72a3e3fc92937f116c4cd8a7e67b232079d9413686e023aeb6afb9f88"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/ca-certificates@sha256:be747c51b701557fe61855fdcedf60548617a479ee52b22ab7a479a2fd3f2d66"
+  uri = "index.docker.io/initializbuildpacks/ca-certificates@sha256:cf3c07c30bc3580f977ae000e4b41093f43b3b0bc8e066042c4cf02219c8d8c8"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/nodejs@sha256:a98f59bed5a46a457d8451708ddfc330688b81e7c509bc1d6c048a24cdae7672"
+  uri = "index.docker.io/initializbuildpacks/node-run-script@sha256:ff0fe8b1be6b71e94a9d8cba3129b116c5afcda537a316b53222a2a49b8ce4ec"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/watchexec@sha256:173e8b4b033df1353f2655fb62425e3b988634683d0f81db9d8e77907b51a666"
+  uri = "index.docker.io/initializbuildpacks/watchexec@sha256:c0149216f3da9c5d424009df8257bd3b9432b3148aba995cc1b16e5ddd6660f3"
 
 [[dependencies]]
-  uri = "public.ecr.aws/initializ/buildpack/datadog@sha256:bb26aeea65786a4299c53a5f89d42e46ee71cfe44d5943fb12414e12a4efda50"
+  uri = "index.docker.io/initializbuildpacks/datadog@sha256:43d5b088ed5ca5cade46d73052aa4e42ece929b6c157241488cfa243a9db6c0d"
