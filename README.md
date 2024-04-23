@@ -1,9 +1,8 @@
 # Paketo Buildpack for Node.js
 
-## `gcr.io/paketo-buildpacks/nodejs`
+## `https://hub.docker.com/r/initializbuildpacks/nodejs`
 
-The Node.js Paketo Buildpack provides a set of collaborating buildpacks that
-enable the building of a Node.js-based application. These buildpacks include:
+The Node.js Paketo Buildpack facilitates the construction of Node.js-based applications through a cohesive set of collaborating buildpacks. These buildpacks encompass:
 - [Node Engine CNB](https://github.com/initializ-buildpacks/node-engine)
 - [Yarn CNB](https://github.com/initializ-buildpacks/yarn)
 - [Yarn Install CNB](https://github.com/initializ-buildpacks/yarn-install)
@@ -12,26 +11,19 @@ enable the building of a Node.js-based application. These buildpacks include:
 - [NPM Start CNB](https://github.com/initializ-buildpacks/npm-start)
 - [Node Start CNB](https://github.com/initializ-buildpacks/node-start)
 
-The buildpack supports building/running simple Node applications or applications
-which utilize either [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-for managing their dependencies. Support for each of these package managers is
-mutually exclusive.
+The buildpack provides support for building and running straightforward Node applications, as well as applications that utilize either [NPM](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) for dependency management. It's worth noting that support for each of these package managers is mutually exclusive.
 
 Usage examples can be found in the
-[`samples` repository under the `nodejs` directory](https://github.com/paketo-buildpacks/samples/tree/main/nodejs).
+[`samples` repository under the `nodejs` directory](https://github.com/initializ-buildpacks/samples/tree/main/nodejs).
 
 #### The Node.js buildpack is compatible with the following builder(s):
-- [Paketo Jammy Full Builder](https://github.com/paketo-buildpacks/builder-jammy-full)
-- [Paketo Jammy Base Builder](https://github.com/paketo-buildpacks/builder-jammy-base)
-- [Paketo Full Builder](https://github.com/paketo-buildpacks/full-builder)
-- [Paketo Base Builder](https://github.com/paketo-buildpacks/base-builder) (for apps which do not leverage common C libraries)
+- [Securepacks Initz Builder](https://github.com/initializ-buildpacks/Securepack)
 
 This buildpack also includes the following utility buildpacks:
 - [Procfile CNB](https://github.com/paketo-buildpacks/procfile)
-- [Environment Variables CNB](https://github.com/paketo-buildpacks/environment-variables)
-- [Image Labels CNB](https://github.com/paketo-buildpacks/image-labels)
-- [CA Certificates CNB](https://github.com/paketo-buildpacks/ca-certificates)
+- [Environment Variables CNB](https://github.com/initializ-buildpacks/environment-variables)
+- [Image Labels CNB](https://github.com/initializ-buildpacks/image-labels)
+- [CA Certificates CNB](https://github.com/initializ-buildpacks/ca-certificates)
 - [Node Run Script CNB](https://github.com/initializ-buildpacks/node-run-script)
 - [Node Module Bill of Materials CNB](https://github.com/initializ-buildpacks/node-module-bom)
 
-Check out the [Paketo Node.js docs](https://paketo.io/docs/buildpacks/language-family-buildpacks/nodejs/) for more information.
