@@ -3,7 +3,7 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "/mnt/c/Users/NaveenKumarSingh/desktop/aprill/node-engine/build/buildpackage.cnb"
+  uri = "index.docker.io/initializbuildpacks/node-engine@sha256:6fe1df9ece94c6686fb25d24ec0851d652a978b16295ff3a245f10bb345442de"
 
 [[dependencies]]
   uri = "index.docker.io/initializbuildpacks/node-start@sha256:1f8f780f93a57f9e2409592babfe45e78e7f24a4c4c2aa0db2064e909cb91071"
