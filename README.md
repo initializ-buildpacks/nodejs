@@ -1,4 +1,4 @@
-# Paketo Buildpack for Node.js
+# Initializ Buildpack for Node.js
 
 ## `https://hub.docker.com/r/initializbuildpacks/nodejs`
 
