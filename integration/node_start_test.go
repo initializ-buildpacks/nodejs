@@ -115,7 +115,7 @@ func testNodeStart(t *testing.T, context spec.G, it spec.S) {
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Image Labels")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Watchexec")))
 
-				environmentVariables, err := image.BuildpackForKey("paketo-buildpacks/environment-variables")
+				environmentVariables, err := image.BuildpackForKey("initializ-buildpacks/environment-variables")
 				Expect(err).NotTo(HaveOccurred())
 				Expect(environmentVariables.Layers["environment-variables"].Metadata["variables"]).To(Equal(map[string]interface{}{"SOME_VARIABLE": "some-value"}))
 
