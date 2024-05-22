@@ -176,12 +176,12 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			Expect(err).NotTo(HaveOccurred())
 		})
 
-		it.After(func() {
-			// Expect(docker.Container.Remove.Execute(container.ID)).To(Succeed())
-			Expect(docker.Image.Remove.Execute(image.ID)).To(Succeed())
-			Expect(docker.Volume.Remove.Execute(occam.CacheVolumeNames(name))).To(Succeed())
-			Expect(os.RemoveAll(source)).To(Succeed())
-		})
+		// it.After(func() {
+		//  Expect(docker.Container.Remove.Execute(container.ID)).To(Succeed())
+		// 	Expect(docker.Image.Remove.Execute(image.ID)).To(Succeed())
+		// 	Expect(docker.Volume.Remove.Execute(occam.CacheVolumeNames(name))).To(Succeed())
+		// 	Expect(os.RemoveAll(source)).To(Succeed())
+		// })
 
 		it("builds a working OCI image for a simple app using node-start and npm-start", func() {
 			var err error
