@@ -235,7 +235,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			it("builds a working OCI image for a simple app and uses the Procfile start command and other utility buildpacks", func() {
 				var err error
 				var logs fmt.Stringer
-				image, logs, err = pack.WithNoColor().Build.
+				image, err = pack.WithNoColor().Build.
 					WithBuildpacks(nodeBuildpack).
 					WithPullPolicy("never").
 					WithEnv(map[string]string{
