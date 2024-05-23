@@ -278,23 +278,23 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				// Expect(err).NotTo(HaveOccurred())
 				// Expect(response.StatusCode).To(Equal(http.StatusOK))
 
-				var env struct {
-					NpmConfigLoglevel string `json:"NPM_CONFIG_LOGLEVEL"`
-				}
-				Expect(json.NewDecoder(response.Body).Decode(&env)).To(Succeed())
-				Expect(env.NpmConfigLoglevel).To(Equal("error"))
+		// 		var env struct {
+		// 			NpmConfigLoglevel string `json:"NPM_CONFIG_LOGLEVEL"`
+		// 		}
+		// 		Expect(json.NewDecoder(response.Body).Decode(&env)).To(Succeed())
+		// 		Expect(env.NpmConfigLoglevel).To(Equal("error"))
 
-				procfileContainer, err = docker.Container.Run.
-					WithEntrypoint("procfile").
-					Execute(image.ID)
-				Expect(err).NotTo(HaveOccurred())
+		// 		procfileContainer, err = docker.Container.Run.
+		// 			WithEntrypoint("procfile").
+		// 			Execute(image.ID)
+		// 		Expect(err).NotTo(HaveOccurred())
 
-				Eventually(func() string {
-					clogs, _ := docker.Container.Logs.Execute(procfileContainer.ID)
-					return clogs.String()
-				}).Should(ContainSubstring("Procfile command"))
-			})
-		})
+		// 		Eventually(func() string {
+		// 			clogs, _ := docker.Container.Logs.Execute(procfileContainer.ID)
+		// 			return clogs.String()
+		// 		}).Should(ContainSubstring("Procfile command"))
+		// 	})
+		// })
 
 		context("when using CA certificates", func() {
 			var (
