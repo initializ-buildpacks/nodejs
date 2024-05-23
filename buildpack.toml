@@ -22,7 +22,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "0.1.6"
+    version = "2.8.9"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -39,7 +39,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
     optional = true
-    version = "1.0.16"
+    version = "1.0.17"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -59,7 +59,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "0.1.0"
+    version = "4.8.3"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -81,7 +81,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "0.1.6"
+    version = "2.8.9"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -94,7 +94,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
     optional = true
-    version = "1.0.16"
+    version = "1.0.17"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -114,7 +114,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "0.1.0"
+    version = "4.8.3"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -136,7 +136,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "0.1.6"
+    version = "2.8.9"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -154,7 +154,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "0.1.0"
+    version = "4.8.3"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
