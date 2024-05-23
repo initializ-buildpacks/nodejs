@@ -104,7 +104,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/npm-start"
     optional = true
-    version = "1.0.18"
+    version = "1.0.21"
 
   [[order.group]]
     id = "initializ-buildpacks/procfile"
