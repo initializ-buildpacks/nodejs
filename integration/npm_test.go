@@ -293,8 +293,8 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 		// 			clogs, _ := docker.Container.Logs.Execute(procfileContainer.ID)
 		// 			return clogs.String()
 		// 		}).Should(ContainSubstring("Procfile command"))
-		// 	})
-		// })
+			})
+		})
 
 		context("when using CA certificates", func() {
 			var (
