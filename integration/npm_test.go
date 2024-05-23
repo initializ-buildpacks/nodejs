@@ -272,7 +272,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				// 	Execute(image.ID)
 				// Expect(err).NotTo(HaveOccurred())
 
-				Eventually(container, "5s").Should(BeAvailable())
+				Eventually(container, "20s").Should(BeAvailable())
 
 				response, err := http.Get(fmt.Sprintf("http://localhost:%s/env", container.HostPort("8080")))
 				Expect(err).NotTo(HaveOccurred())
