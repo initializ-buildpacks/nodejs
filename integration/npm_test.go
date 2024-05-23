@@ -28,9 +28,9 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 		pullPolicy = "never"
 	)
 
-	if settings.Extensions.UbiNodejsExtension.Online != "" {
-		pullPolicy = "always"
-	}
+	// if settings.Extensions.UbiNodejsExtension.Online != "" {
+	// 	pullPolicy = "always"
+	// }
 
 	it.Before(func() {
 		pack = occam.NewPack()
@@ -65,7 +65,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			var err error
 			var logs fmt.Stringer
 			image, logs, _ = pack.WithNoColor().Build.
-				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
+				// WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
 				WithPullPolicy(pullPolicy).
 				Execute(name, source)
@@ -130,7 +130,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			var err error
 			var logs fmt.Stringer
 			image, logs, _ = pack.WithNoColor().Build.
-				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
+				// WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
 				WithPullPolicy(pullPolicy).
 				Execute(name, source)
@@ -195,7 +195,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			var err error
 			var logs fmt.Stringer
 			image, logs, err = pack.WithNoColor().Build.
-				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
+				// WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
 				WithPullPolicy(pullPolicy).
 				Execute(name, source)
@@ -245,7 +245,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				var err error
 				var logs fmt.Stringer
 				image, logs, err = pack.WithNoColor().Build.
-					WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
+					// WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 					WithBuildpacks(nodeBuildpack).
 					WithPullPolicy(pullPolicy).
 					WithEnv(map[string]string{
@@ -340,7 +340,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				var err error
 				var logs fmt.Stringer
 				image, logs, err = pack.WithNoColor().Build.
-					WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
+					// WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 					WithBuildpacks(nodeBuildpack).
 					WithPullPolicy(pullPolicy).
 					Execute(name, filepath.Join(source, "npm_server"))
