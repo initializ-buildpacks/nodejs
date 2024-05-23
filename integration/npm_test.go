@@ -24,7 +24,13 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 
 		pack   occam.Pack
 		docker occam.Docker
+
+		pullPolicy = "never"
 	)
+
+	if settings.Extensions.UbiNodejsExtension.Online != "" {
+		pullPolicy = "always"
+	}
 
 	it.Before(func() {
 		pack = occam.NewPack()
@@ -59,8 +65,9 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			var err error
 			var logs fmt.Stringer
 			image, logs, _ = pack.WithNoColor().Build.
+				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
-				WithPullPolicy("never").
+				WithPullPolicy(pullPolicy).
 				Execute(name, source)
 			Expect(err).NotTo(HaveOccurred())
 
@@ -123,8 +130,9 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			var err error
 			var logs fmt.Stringer
 			image, logs, _ = pack.WithNoColor().Build.
+				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
-				WithPullPolicy("never").
+				WithPullPolicy(pullPolicy).
 				Execute(name, source)
 			Expect(err).NotTo(HaveOccurred())
 
@@ -176,19 +184,20 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 			Expect(err).NotTo(HaveOccurred())
 		})
 
-		// it.After(func() {
-		//  Expect(docker.Container.Remove.Execute(container.ID)).To(Succeed())
-		// 	Expect(docker.Image.Remove.Execute(image.ID)).To(Succeed())
-		// 	Expect(docker.Volume.Remove.Execute(occam.CacheVolumeNames(name))).To(Succeed())
-		// 	Expect(os.RemoveAll(source)).To(Succeed())
-		// })
+		it.After(func() {
+			Expect(docker.Container.Remove.Execute(container.ID)).To(Succeed())
+			Expect(docker.Image.Remove.Execute(image.ID)).To(Succeed())
+			Expect(docker.Volume.Remove.Execute(occam.CacheVolumeNames(name))).To(Succeed())
+			Expect(os.RemoveAll(source)).To(Succeed())
+		})
 
 		it("builds a working OCI image for a simple app using node-start and npm-start", func() {
 			var err error
 			var logs fmt.Stringer
 			image, logs, err = pack.WithNoColor().Build.
+				WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 				WithBuildpacks(nodeBuildpack).
-				WithPullPolicy("never").
+				WithPullPolicy(pullPolicy).
 				Execute(name, source)
 			Expect(err).NotTo(HaveOccurred())
 
@@ -228,16 +237,17 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				Expect(os.WriteFile(filepath.Join(source, "Procfile"), []byte("procfile: echo Procfile command"), 0644)).To(Succeed())
 			})
 
-			// it.After(func() {
-			// 	Expect(docker.Container.Remove.Execute(procfileContainer.ID)).To(Succeed())
-			// })
+			it.After(func() {
+				Expect(docker.Container.Remove.Execute(procfileContainer.ID)).To(Succeed())
+			})
 
 			it("builds a working OCI image for a simple app and uses the Procfile start command and other utility buildpacks", func() {
 				var err error
 				var logs fmt.Stringer
 				image, logs, err = pack.WithNoColor().Build.
+					WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 					WithBuildpacks(nodeBuildpack).
-					WithPullPolicy("never").
+					WithPullPolicy(pullPolicy).
 					WithEnv(map[string]string{
 						"BPE_SOME_VARIABLE":      "some-value",
 						"BP_IMAGE_LABELS":        "some-label=some-value",
@@ -246,7 +256,7 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 						"BP_DATADOG_ENABLED":     "true",
 					}).
 					Execute(name, source)
-				// Expect(err).NotTo(HaveOccurred())
+				Expect(err).NotTo(HaveOccurred())
 
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Watchexec")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Node Engine")))
@@ -255,44 +265,44 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for NPM Start")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Procfile")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Datadog")))
-				// // Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Environment Variables")))
-				// Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Image Labels")))
-				// Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Node Run Script")))
+				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Environment Variables")))
+				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Image Labels")))
+				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Node Run Script")))
 
-				// environmentVariables, err := image.BuildpackForKey("initializ-buildpacks/environment-variables")
-				// Expect(err).NotTo(HaveOccurred())
-				// Expect(environmentVariables.Layers["environment-variables"].Metadata["variables"]).To(Equal(map[string]interface{}{"SOME_VARIABLE": "some-value"}))
+				environmentVariables, err := image.BuildpackForKey("paketo-buildpacks/environment-variables")
+				Expect(err).NotTo(HaveOccurred())
+				Expect(environmentVariables.Layers["environment-variables"].Metadata["variables"]).To(Equal(map[string]interface{}{"SOME_VARIABLE": "some-value"}))
 
-				// Expect(image.Labels["some-label"]).To(Equal("some-value"))
+				Expect(image.Labels["some-label"]).To(Equal("some-value"))
 
-				// container, err = docker.Container.Run.
-				// 	WithEnv(map[string]string{"PORT": "8080"}).
-				// 	WithPublish("8080").
-				// 	WithPublishAll().
-				// 	Execute(image.ID)
-				// Expect(err).NotTo(HaveOccurred())
+				container, err = docker.Container.Run.
+					WithEnv(map[string]string{"PORT": "8080"}).
+					WithPublish("8080").
+					WithPublishAll().
+					Execute(image.ID)
+				Expect(err).NotTo(HaveOccurred())
 
-				// Eventually(container, "5s").Should(BeAvailable())
+				Eventually(container, "5s").Should(BeAvailable())
 
-				// response, err := http.Get(fmt.Sprintf("http://localhost:%s/env", container.HostPort("8080")))
-				// Expect(err).NotTo(HaveOccurred())
-				// Expect(response.StatusCode).To(Equal(http.StatusOK))
+				response, err := http.Get(fmt.Sprintf("http://localhost:%s/env", container.HostPort("8080")))
+				Expect(err).NotTo(HaveOccurred())
+				Expect(response.StatusCode).To(Equal(http.StatusOK))
 
-		// 		var env struct {
-		// 			NpmConfigLoglevel string `json:"NPM_CONFIG_LOGLEVEL"`
-		// 		}
-		// 		Expect(json.NewDecoder(response.Body).Decode(&env)).To(Succeed())
-		// 		Expect(env.NpmConfigLoglevel).To(Equal("error"))
+				var env struct {
+					NpmConfigLoglevel string `json:"NPM_CONFIG_LOGLEVEL"`
+				}
+				Expect(json.NewDecoder(response.Body).Decode(&env)).To(Succeed())
+				Expect(env.NpmConfigLoglevel).To(Equal("error"))
 
-		// 		procfileContainer, err = docker.Container.Run.
-		// 			WithEntrypoint("procfile").
-		// 			Execute(image.ID)
-		// 		Expect(err).NotTo(HaveOccurred())
+				procfileContainer, err = docker.Container.Run.
+					WithEntrypoint("procfile").
+					Execute(image.ID)
+				Expect(err).NotTo(HaveOccurred())
 
-		// 		Eventually(func() string {
-		// 			clogs, _ := docker.Container.Logs.Execute(procfileContainer.ID)
-		// 			return clogs.String()
-		// 		}).Should(ContainSubstring("Procfile command"))
+				Eventually(func() string {
+					clogs, _ := docker.Container.Logs.Execute(procfileContainer.ID)
+					return clogs.String()
+				}).Should(ContainSubstring("Procfile command"))
 			})
 		})
 
@@ -330,8 +340,9 @@ func testNPM(t *testing.T, context spec.G, it spec.S) {
 				var err error
 				var logs fmt.Stringer
 				image, logs, err = pack.WithNoColor().Build.
+					WithExtensions(settings.Extensions.UbiNodejsExtension.Online).
 					WithBuildpacks(nodeBuildpack).
-					WithPullPolicy("never").
+					WithPullPolicy(pullPolicy).
 					Execute(name, filepath.Join(source, "npm_server"))
 				Expect(err).NotTo(HaveOccurred())
 
