@@ -2,7 +2,7 @@
 
 ## `https://hub.docker.com/r/initializbuildpacks/nodejs`
 
-The Node.js Paketo Buildpack facilitates the construction of Node.js-based applications through a cohesive set of collaborating buildpacks. These buildpacks encompass:
+The Node.js Initializ Buildpack facilitates the construction of Node.js-based applications through a cohesive set of collaborating buildpacks. These buildpacks encompass:
 - [Node Engine CNB](https://github.com/initializ-buildpacks/node-engine)
 - [Yarn CNB](https://github.com/initializ-buildpacks/yarn)
 - [Yarn Install CNB](https://github.com/initializ-buildpacks/yarn-install)
@@ -20,7 +20,7 @@ Usage examples can be found in the
 - [Securepacks Initz Builder](https://github.com/initializ-buildpacks/Securepack)
 
 This buildpack also includes the following utility buildpacks:
-- [Procfile CNB](https://github.com/paketo-buildpacks/procfile)
+- [Procfile CNB](https://github.com/initializ-buildpacks/procfile)
 - [Environment Variables CNB](https://github.com/initializ-buildpacks/environment-variables)
 - [Image Labels CNB](https://github.com/initializ-buildpacks/image-labels)
 - [CA Certificates CNB](https://github.com/initializ-buildpacks/ca-certificates)
