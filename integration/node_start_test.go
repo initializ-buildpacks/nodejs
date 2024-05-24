@@ -88,9 +88,9 @@ func testNodeStart(t *testing.T, context spec.G, it spec.S) {
 				Expect(os.WriteFile(filepath.Join(source, "Procfile"), []byte("procfile: echo Procfile command"), 0644)).To(Succeed())
 			})
 
-			// it.After(func() {
-			// 	Expect(docker.Container.Remove.Execute(procfileContainer.ID)).To(Succeed())
-			// })
+			it.After(func() {
+				Expect(docker.Container.Remove.Execute(procfileContainer.ID)).To(Succeed())
+			})
 
 			it("should build a working OCI image and run the app with the start command from the Procfile and other utility buildpacks", func() {
 				var err error
@@ -110,7 +110,7 @@ func testNodeStart(t *testing.T, context spec.G, it spec.S) {
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Node Engine")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Node Start")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Procfile")))
-				// Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Datadog")))
+				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Datadog")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Environment Variables")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Image Labels")))
 				Expect(logs).To(ContainLines(ContainSubstring("Buildpack for Watchexec")))
