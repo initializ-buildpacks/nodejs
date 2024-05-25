@@ -34,7 +34,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/yarn-install"
-    version = "1.2.5"
+    version = "1.2.6"
 
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
