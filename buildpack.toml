@@ -22,7 +22,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.12"
+    version = "2.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -81,7 +81,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.12"
+    version = "2.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
@@ -136,7 +136,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/watchexec"
     optional = true
-    version = "2.8.12"
+    version = "2.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
