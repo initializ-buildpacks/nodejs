@@ -2,6 +2,8 @@ module github.com/initializ-buildpacks/nodejs
 
 go 1.22
 
+toolchain go1.22.4
+
 require (
 	github.com/onsi/gomega v1.33.1
 	github.com/paketo-buildpacks/occam v0.18.7
