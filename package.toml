@@ -33,7 +33,7 @@
   uri = "urn:cnb:registry:initializ-buildpacks/image-labels@4.5.10"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/ca-certificates@4.0.2"
+  uri = "urn:cnb:registry:initializ-buildpacks/ca-certificates@4.0.1"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/node-run-script@1.0.20"
