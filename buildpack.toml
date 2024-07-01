@@ -89,7 +89,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/npm-install"
-    version = "1.3.9"
+    version = "1.3.10"
 
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
