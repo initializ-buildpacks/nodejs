@@ -17,7 +17,7 @@ Usage examples can be found in the
 [`samples` repository under the `nodejs` directory](https://github.com/initializ-buildpacks/samples/tree/main/nodejs).
 
 #### The Node.js buildpack is compatible with the following builder(s):
-- [Securepacks Initz Builder](https://github.com/initializ-buildpacks/Securepack)
+- [Securepacks Builder](https://github.com/initializ-buildpacks/Securepacks)
 
 This buildpack also includes the following utility buildpacks:
 - [Procfile CNB](https://github.com/initializ-buildpacks/procfile)
