@@ -30,7 +30,7 @@
   uri = "urn:cnb:registry:initializ-buildpacks/environment-variables@4.5.13"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/image-labels@4.6.0"
+  uri = "urn:cnb:registry:initializ-buildpacks/image-labels@4.6.1"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/ca-certificates@4.0.3"

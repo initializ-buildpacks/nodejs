@@ -69,7 +69,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
 
 [[order]]
 
@@ -124,7 +124,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
 
 [[order]]
 
@@ -164,4 +164,4 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
