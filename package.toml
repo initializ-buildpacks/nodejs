@@ -3,7 +3,7 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/node-engine@3.6.3"
+  uri = "urn:cnb:registry:initializ-buildpacks/node-engine@3.6.5"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/node-start@1.1.15"
@@ -15,7 +15,7 @@
   uri = "urn:cnb:registry:initializ-buildpacks/npm-start@1.4.0"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/yarn-install@1.2.10"
+  uri = "urn:cnb:registry:initializ-buildpacks/yarn-install@1.2.11"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/yarn@1.2.9"
@@ -30,7 +30,7 @@
   uri = "urn:cnb:registry:initializ-buildpacks/environment-variables@4.5.13"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/image-labels@4.6.0"
+  uri = "urn:cnb:registry:initializ-buildpacks/image-labels@4.6.1"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/ca-certificates@4.0.3"

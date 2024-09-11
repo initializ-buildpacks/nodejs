@@ -26,7 +26,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.3"
+    version = "3.6.5"
 
   [[order.group]]
     id = "initializ-buildpacks/yarn"
@@ -34,7 +34,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/yarn-install"
-    version = "1.2.10"
+    version = "1.2.11"
 
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
@@ -69,7 +69,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
 
 [[order]]
 
@@ -85,7 +85,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.3"
+    version = "3.6.5"
 
   [[order.group]]
     id = "initializ-buildpacks/npm-install"
@@ -124,7 +124,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
 
 [[order]]
 
@@ -140,7 +140,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.3"
+    version = "3.6.5"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -164,4 +164,4 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/image-labels"
     optional = true
-    version = "4.6.0"
+    version = "4.6.1"
