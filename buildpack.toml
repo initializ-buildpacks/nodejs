@@ -39,7 +39,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
     optional = true
-    version = "1.0.21"
+    version = "1.0.22"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -94,7 +94,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/node-run-script"
     optional = true
-    version = "1.0.21"
+    version = "1.0.22"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -104,7 +104,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/npm-start"
     optional = true
-    version = "1.4.0"
+    version = "1.4.1"
 
   [[order.group]]
     id = "initializ-buildpacks/procfile"
