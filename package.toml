@@ -6,13 +6,13 @@
   uri = "urn:cnb:registry:initializ-buildpacks/node-engine@3.6.8"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/node-start@1.1.15"
+  uri = "urn:cnb:registry:initializ-buildpacks/node-start@1.1.16"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/npm-install@1.3.12"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/npm-start@1.4.1"
+  uri = "urn:cnb:registry:initializ-buildpacks/npm-start@1.4.2"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/yarn-install@1.2.12"
