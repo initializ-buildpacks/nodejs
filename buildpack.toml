@@ -59,7 +59,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.11"
+    version = "4.8.12"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -114,7 +114,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.11"
+    version = "4.8.12"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -154,7 +154,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.11"
+    version = "4.8.12"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
