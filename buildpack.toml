@@ -26,7 +26,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.8"
+    version = "3.6.9"
 
   [[order.group]]
     id = "initializ-buildpacks/yarn"
@@ -59,7 +59,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.10"
+    version = "4.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -85,7 +85,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.8"
+    version = "3.6.9"
 
   [[order.group]]
     id = "initializ-buildpacks/npm-install"
@@ -114,7 +114,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.10"
+    version = "4.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"
@@ -140,7 +140,7 @@ api = "0.7"
 
   [[order.group]]
     id = "initializ-buildpacks/node-engine"
-    version = "3.6.8"
+    version = "3.6.9"
 
   [[order.group]]
     id = "initializ-buildpacks/node-start"
@@ -154,7 +154,7 @@ api = "0.7"
   [[order.group]]
     id = "initializ-buildpacks/datadog"
     optional = true
-    version = "4.8.10"
+    version = "4.8.13"
 
   [[order.group]]
     id = "initializ-buildpacks/environment-variables"

@@ -3,7 +3,7 @@
   uri = "build/buildpack.tgz"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/node-engine@3.6.8"
+  uri = "urn:cnb:registry:initializ-buildpacks/node-engine@3.6.9"
 
 [[dependencies]]
   uri = "urn:cnb:registry:initializ-buildpacks/node-start@1.1.15"
@@ -42,4 +42,4 @@
   uri = "urn:cnb:registry:initializ-buildpacks/watchexec@2.8.15"
 
 [[dependencies]]
-  uri = "urn:cnb:registry:initializ-buildpacks/datadog@4.8.10"
+  uri = "urn:cnb:registry:initializ-buildpacks/datadog@4.8.13"
